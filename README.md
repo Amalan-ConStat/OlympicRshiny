@@ -13,6 +13,8 @@ state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![MIT
 license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![Codecov test
+coverage](https://codecov.io/gh/Amalan-ConStat/OlympicRshiny/branch/main/graph/badge.svg)](https://app.codecov.io/gh/Amalan-ConStat/OlympicRshiny?branch=main)
 <!-- badges: end -->
 
 ## How to engage with “OlympicRshiny” the first time ?
@@ -45,8 +47,6 @@ Data for the Application:
 
 ### Tabs
 
-- NOC CODE - Indicating the three letter code for their respective
-  country’s full name.
 - GRAPH - Plot indicating the medals wons over the years for a chosen
   country.
 - DATA - For a chosen country the data is acquired.
