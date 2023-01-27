@@ -17,6 +17,7 @@ Imports:
     forcats,
     ggplot2,
     golem (>= 0.3.5),
+    pkgload,
     shiny (>= 1.7.4),
     shinybusy,
     shinythemes,
