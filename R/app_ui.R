@@ -3,7 +3,6 @@
 #' @param request Internal parameter for `{shiny}`.
 #'     DO NOT REMOVE.
 #' @import shiny
-#' @import DT
 #' @importFrom shinythemes shinytheme
 #' @importFrom shinybusy add_busy_spinner
 #' @noRd

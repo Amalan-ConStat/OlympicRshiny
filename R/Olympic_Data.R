@@ -1,0 +1,27 @@
+#' Olympic data
+#'
+#' Data of Olympic games from 1896 to 2016 are stored here, which is available at Kaggle.
+#'
+#' @format A data frame with
+#' \describe{
+#' \item{\code{Name}}{Athlete's name}
+#' \item{\code{Sex}}{Male or Female}
+#' \item{\code{Age}}{Age of the athlete in integer form}
+#' \item{\code{Height}}{In centimeters}
+#' \item{\code{Weight}}{In kilograms}
+#' \item{\code{Team}}{Team name}
+#' \item{\code{NOC}}{National Olympic Committee 3-letter code converted into region}
+#' \item{\code{Games}}{Year and season}
+#' \item{\code{Year}}{Year the olympic games was held}
+#' \item{\code{Season}}{Summer or Winter olympic games}
+#' \item{\code{City}}{Host city}
+#' \item{\code{Sport}}{Sport}
+#' \item{\code{Event}}{Event}
+#' \item{\code{Medal}}{Gold, Silver, Bronze, or No medal}
+#' }
+#'
+#' @examples
+#' plot(Olympic$Height,Olympic$Weight)
+#'
+"Olympic"
+
