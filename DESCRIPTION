@@ -7,7 +7,7 @@ Description: Shiny Application to visualize Olympic Data. From 1896 to
     2016. Even Winter Olympics events are included. Thank You Kaggle for
     the Data.
 License: MIT + file LICENSE
-URL: https://github.com/Amalan-ConStat/OlympicRshiny
+URL: https://github.com/Amalan-ConStat/OlympicRshiny, https://amalan-con-stat.shinyapps.io/OlympicRshiny/, https://amalan-con-stat.shinyapps.io/olympic/
 BugReports: https://github.com/Amalan-ConStat/OlympicRshiny/issues
 Depends: 
     R (>= 2.10)
