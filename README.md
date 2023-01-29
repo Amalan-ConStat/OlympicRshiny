@@ -6,15 +6,12 @@
 <!-- badges: start -->
 
 [![packageversion](https://img.shields.io/badge/Package%20version-1.0.0-orange.svg?style=flat-square)](commits/main)
-[![Lifecycle:
-stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![MIT
 license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-[![Codecov test
-coverage](https://codecov.io/gh/Amalan-ConStat/OlympicRshiny/branch/main/graph/badge.svg)](https://app.codecov.io/gh/Amalan-ConStat/OlympicRshiny?branch=main)
 <!-- badges: end -->
 
 ## How to engage with “OlympicRshiny” the first time ?
