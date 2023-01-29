@@ -25,7 +25,7 @@ install.packages("OlympicRshiny")
 ```
 
 Old project is at :
-[Here](https://github.com/Amalan-ConStat/Olympic-Data-Rshiny)
+[Here](https://github.com/Amalan-ConStat/Olympic-Data-Rshiny-)
 
 Old location for the Rshiny App:
 [Here](https://amalan-con-stat.shinyapps.io/olympic/)
