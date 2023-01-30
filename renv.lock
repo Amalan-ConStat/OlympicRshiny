@@ -472,10 +472,15 @@
     },
     "fs": {
       "Package": "fs",
-      "Version": "1.6.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "0120e8c933bace1141e0b0d376b0c010",
+      "Version": "1.5.2.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "fs",
+      "RemoteUsername": "r-lib",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "5a9414f90d02e1780e565c13e4fcd9fe2cd0412f",
+      "Hash": "e1949018ac5aa3749abfcd57302562f1",
       "Requirements": []
     },
     "generics": {
