@@ -20,8 +20,8 @@
 ##
 golem::fill_desc(
   pkg_name = "OlympicRshiny", # The Name of the package containing the App
-  pkg_title = "Rshiny Application for Olympic Data", # The Title of the package containing the App
-  pkg_description = "Shiny Application to visualize Olympic Data. From 1896 to 2016. Even Winter Olympics events are included. Thank You Kaggle for the Data.", # The Description of the package containing the App
+  pkg_title = "'Shiny' Application for Olympic Data", # The Title of the package containing the App
+  pkg_description = "'Shiny' Application to visualize Olympic Data. From 1896 to 2016. Even Winter Olympics events are included. Thank You Kaggle for the Data. <https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results>", # The Description of the package containing the App
   author_first_name = "Amalan", # Your First Name
   author_last_name = "Mahendran", # Your Last Name
   author_email = "amalan0595@gmail.com", # Your Email

@@ -1,13 +1,15 @@
 Package: OlympicRshiny
-Title: Rshiny Application for Olympic Data
+Title: 'Shiny' Application for Olympic Data
 Version: 1.0.0
 Authors@R: 
     person("Amalan", "Mahendran", , "amalan0595@gmail.com", role = c("cre", "aut"))
-Description: Shiny Application to visualize Olympic Data. From 1896 to
-    2016. Even Winter Olympics events are included. Thank You Kaggle for
-    the Data.
+Description: 'Shiny' Application to visualize Olympic Data. From 1896 to
+    2016. Even Winter Olympics events are included. Data is from Kaggle at
+    <https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results>.
 License: MIT + file LICENSE
-URL: https://github.com/Amalan-ConStat/OlympicRshiny, https://amalan-con-stat.shinyapps.io/OlympicRshiny/, https://amalan-con-stat.shinyapps.io/olympic/
+URL: https://github.com/Amalan-ConStat/OlympicRshiny,
+    https://amalan-con-stat.shinyapps.io/OlympicRshiny/,
+    https://amalan-con-stat.shinyapps.io/olympic/
 BugReports: https://github.com/Amalan-ConStat/OlympicRshiny/issues
 Depends: 
     R (>= 2.10)
