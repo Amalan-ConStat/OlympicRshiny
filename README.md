@@ -5,13 +5,25 @@
 
 <!-- badges: start -->
 
+[![](https://www.r-pkg.org/badges/version/OlympicRshiny)](https://cran.r-project.org/package=OlympicRshiny)
 [![packageversion](https://img.shields.io/badge/Package%20version-1.0.0-orange.svg?style=flat-square)](commits/main)
-[![](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![Dependencies](https://tinyverse.netlify.com/badge/OlympicRshiny)](https://cran.r-project.org/package=OlympicRshiny)
+[![MIT
+license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+[![](http://cranlogs.r-pkg.org/badges/grand-total/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
+[![](http://cranlogs.r-pkg.org/badges/last-month/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
+[![](http://cranlogs.r-pkg.org/badges/last-week/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
+
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![MIT
-license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![GitHub
+issues](https://img.shields.io/github/issues/Amalan-ConStat/OlympicRshiny.svg?style=popout)](https://github.com/Amalan-ConStat/OlympicRshiny/issues)
+
+[![](https://img.shields.io/github/languages/code-size/Amalan-ConStat/OlympicRshiny.svg)](https://github.com/Amalan-ConStat/OlympicRshiny)
+
 <!-- badges: end -->
 
 ## How to engage with “OlympicRshiny” the first time ?

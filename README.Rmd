@@ -13,10 +13,22 @@ library(badger)
 # OlympicRshiny <img src="man/figures/logo.png" align="right" alt="" width="150" />
 
 <!-- badges: start -->
+
+`r badge_cran_release("OlympicRshiny")`
 [![packageversion](https://img.shields.io/badge/Package%20version-1.0.0-orange.svg?style=flat-square)](commits/main)
-`r badge_lifecycle("stable")` 
-`r badge_repostatus("Active")`
+`r badge_dependencies("OlympicRshiny")`
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+`r badge_cran_download("OlympicRshiny", "grand-total", "green")`
+`r badge_cran_download("OlympicRshiny", "last-month", "green")`
+`r badge_cran_download("OlympicRshiny", "last-week", "green")`
+
+`r badge_repostatus("Active")`
+`r badge_lifecycle("stable")`
+[![GitHub issues](https://img.shields.io/github/issues/Amalan-ConStat/OlympicRshiny.svg?style=popout)](https://github.com/Amalan-ConStat/OlympicRshiny/issues)
+
+`r badge_code_size("Amalan-ConStat/OlympicRshiny")`
+
 <!-- badges: end -->
 
 ## How to engage with "OlympicRshiny" the first time ? 
