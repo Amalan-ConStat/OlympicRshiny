@@ -3,10 +3,13 @@
 #' @param input,output,session Internal parameters for {shiny}.
 #'     DO NOT REMOVE.
 #' @import shiny
+#' @import golem
+#' @import ggplot2
 #' @importFrom summarytools dfSummary
 #' @noRd
 app_server <- function(input, output, session) {
-
+  get_golem_options("Olympic")
+  Olympic<-OlympicRshiny::Olympic
   output$HeightvsWeightplot<-renderPlot({
     Medal_color<-c("#FFD700","#C0C0C0","#CD7F32")
     names(Medal_color)<-levels(c("Gold","Silver","Bronze"))

@@ -3,13 +3,18 @@
 #' @param request Internal parameter for `{shiny}`.
 #'     DO NOT REMOVE.
 #' @import shiny
+#' @import golem
 #' @importFrom shinythemes shinytheme
 #' @importFrom shinybusy add_busy_spinner
 #' @noRd
 app_ui <- function(request) {
+
+  get_golem_options("Olympic")
+  Olympic<-OlympicRshiny::Olympic
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
+
     # Your application UI logic
     fluidPage(theme = shinythemes::shinytheme("flatly"),
 
@@ -68,7 +73,7 @@ app_ui <- function(request) {
                               tabPanel("G/Years",plotOutput("GenderBarplot")),
                               tabPanel("S/Years",plotOutput("SportsBarplot")),
                               tabPanel("H/W/Sport",plotOutput("HWSplot")),
-                              tabPanel(title=HTML("</a></li><li><a href='https://amalan-con-stat.netlify.com/' target='_blank'>About Me"))
+                              tabPanel(title=HTML("</a></li><li><a href='http://www.amalan-mahendran.com/' target='_blank'>About Me"))
                               )
                           ),fluid = FALSE)
     )
@@ -85,13 +90,13 @@ app_ui <- function(request) {
 #' @noRd
 golem_add_external_resources <- function() {
   add_resource_path(
-    "www",system.file("app/www",package = "OlympicRshiny")
+    "www",app_sys("app/www")#,package = "OlympicRshiny"
   )
 
   tags$head(
     favicon(ext="png"),
     bundle_resources(
-      path = system.file("app/www"),
+      path = app_sys("app/www"),
       app_title = "OlympicRshiny"
     )
     # Add here other external resources

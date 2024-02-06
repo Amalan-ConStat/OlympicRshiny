@@ -25,7 +25,8 @@ golem::fill_desc(
   author_first_name = "Amalan", # Your First Name
   author_last_name = "Mahendran", # Your Last Name
   author_email = "amalan0595@gmail.com", # Your Email
-  repo_url = "https://github.com/Amalan-ConStat/OlympicRshiny" # The URL of the GitHub Repo (optional)
+  repo_url = "https://github.com/Amalan-ConStat/OlympicRshiny", # The URL of the GitHub Repo (optional),
+  pkg_version = "1.0.1"
 )
 
 ## Set {golem} options ----
