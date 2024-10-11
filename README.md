@@ -6,10 +6,10 @@
 <!-- badges: start -->
 
 [![](https://www.r-pkg.org/badges/version/OlympicRshiny)](https://cran.r-project.org/package=OlympicRshiny)
-[![packageversion](https://img.shields.io/badge/Package%20version-1.0.0-orange.svg?style=flat-square)](commits/main)
-[![Dependencies](https://tinyverse.netlify.com/badge/OlympicRshiny)](https://cran.r-project.org/package=OlympicRshiny)
-[![MIT
-license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![CRAN
+checks](https://badges.cranchecks.info/summary/OlympicRshiny.svg)](https://cran.r-project.org/web/checks/check_results_OlympicRshiny.html)
+[![r-universe status
+badge](https://Amalan-ConStat.r-universe.dev/badges/OlympicRshiny)](https://Amalan-ConStat.r-universe.dev/OlympicRshiny)
 
 [![](http://cranlogs.r-pkg.org/badges/grand-total/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
 [![](http://cranlogs.r-pkg.org/badges/last-month/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
@@ -23,6 +23,8 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 issues](https://img.shields.io/github/issues/Amalan-ConStat/OlympicRshiny.svg?style=popout)](https://github.com/Amalan-ConStat/OlympicRshiny/issues)
 
 [![](https://img.shields.io/github/languages/code-size/Amalan-ConStat/OlympicRshiny.svg)](https://github.com/Amalan-ConStat/OlympicRshiny)
+[![MIT
+license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 <!-- badges: end -->
 
