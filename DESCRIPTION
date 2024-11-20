@@ -1,6 +1,6 @@
 Package: OlympicRshiny
 Title: 'Shiny' Application for Olympic Data
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: 
     person("Amalan", "Mahendran", , "amalan0595@gmail.com", role = c("cre", "aut"))
 Description: 'Shiny' Application to visualize Olympic Data. From 1896 to
@@ -24,4 +24,4 @@ Imports:
     summarytools
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2

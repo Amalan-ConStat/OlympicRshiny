@@ -38,9 +38,11 @@ app_server <- function(input, output, session) {
       ggplot2::theme_bw()+
       ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 60, vjust = 0.25, hjust=0.25))},height = 1500,width = 1200)
 
+  Input_NOC<-reactive({ input$NOC })
+
   # creating the summary for selected variables
   output$summary<-renderUI({
-    print(summarytools::dfSummary(subset(Olympic,NOC==input$NOC,
+    print(summarytools::dfSummary(subset(Olympic,NOC==Input_NOC(),
                                          select =c(Sex,Age,Height,Weight,Year,Season,Sport,Medal))
     ),method = 'render',headings = FALSE, bootstracp.css = FALSE)})
 
@@ -49,7 +51,7 @@ app_server <- function(input, output, session) {
     Medal_color<-c("#FFD700","#C0C0C0","#CD7F32")
     names(Medal_color)<-levels(c("Gold","Silver","Bronze"))
 
-    ggplot2::ggplot(subset(Olympic[!is.na(Olympic$Medal),],NOC==input$NOC) |>
+    ggplot2::ggplot(subset(Olympic[!is.na(Olympic$Medal),],NOC==Input_NOC()) |>
                       dplyr::group_by(Year,Season,Sex,Medal) |>
                       dplyr::count(Year,Season,Sex,Medal),
                     ggplot2::aes(x=factor(Year),y=n,color=factor(Medal),group=factor(Medal)))+
@@ -66,7 +68,7 @@ app_server <- function(input, output, session) {
     Gender_color<-c("#6BA5DE","#DEA1C0")
     names(Gender_color)<-levels(c("Male","Female"))
 
-    ggplot2::ggplot(subset(Olympic,NOC==input$NOC,select = c(Sex,Year,Season)),
+    ggplot2::ggplot(subset(Olympic,NOC==Input_NOC(),select = c(Sex,Year,Season)),
                     ggplot2::aes(x=factor(Year),fill=factor(Sex),group=factor(Sex)))+
       ggplot2::geom_bar(position = "dodge")+
       ggplot2::xlab("Years")+ggplot2::ylab("Frequency")+
@@ -84,7 +86,7 @@ app_server <- function(input, output, session) {
     Gender_color<-c("#6BA5DE","#DEA1C0")
     names(Gender_color)<-levels(c("Male","Female"))
 
-    ggplot2::ggplot(subset(Olympic,NOC==input$NOC,select = c(Sex,Sport,Season)),
+    ggplot2::ggplot(subset(Olympic,NOC==Input_NOC(),select = c(Sex,Sport,Season)),
                     ggplot2::aes(x=forcats::fct_infreq(factor(Sport)),fill=factor(Sex),group=factor(Sex)))+
       ggplot2::geom_bar(position = "dodge")+
       ggplot2::xlab("Sport")+ggplot2::ylab("Frequency")+ggplot2::coord_flip()+
@@ -102,7 +104,8 @@ app_server <- function(input, output, session) {
     Gender_color<-c("#6BA5DE","#DEA1C0")
     names(Gender_color)<-levels(c("Male","Female"))
 
-    ggplot2::ggplot(subset(Olympic,NOC==input$NOC,select = c(Height,Weight,Sport,Sex)),
+    ggplot2::ggplot(ggplot2::remove_missing(subset(Olympic,NOC==Input_NOC(),select = c(Height,Weight,Sport,Sex)),
+                                            na.rm = TRUE),
                     ggplot2::aes(x=Weight,y=Height,color=factor(Sex)))+
       ggplot2::geom_point()+
       ggplot2::ggtitle("HEIGHT AND WEIGHT OF PARTICIPANTS BASED ON SPORTS")+
