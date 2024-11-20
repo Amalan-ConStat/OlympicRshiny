@@ -5,5 +5,7 @@ account: amalan-con-stat
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8158643
-bundleId: 8226201
+bundleId: 9390698
 url: https://amalan-con-stat.shinyapps.io/OlympicRshiny/
+asMultiple: FALSE
+asStatic: FALSE
