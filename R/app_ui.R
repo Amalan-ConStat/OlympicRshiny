@@ -9,10 +9,10 @@
 #' @noRd
 app_ui <- function(request) {
 
-  get_golem_options("Olympic")
+  #get_golem_options("Olympic")
   Olympic<-OlympicRshiny::Olympic
-  tagList(
-    # Leave this function for adding external resources
+
+  tagList(# Leave this function for adding external resources
     golem_add_external_resources(),
 
     # Your application UI logic
@@ -20,60 +20,55 @@ app_ui <- function(request) {
 
               shinybusy::add_busy_spinner(spin = "fading-circle"),
               # Application title
-              titlePanel("OLYMPIC DATA FROM KAGGLE : AN RSHINY PERSPECTIVE",windowTitle = "Olympic : Rshiny"),
+              titlePanel("OLYMPIC DATA: AN R SHINY PERSPECTIVE",windowTitle = "OlympicRshiny"),
 
               # sidebar which incldues the image and title, information
               sidebarLayout(
                 sidebarPanel(
-                  h3("Olympic & Countries From 1896 Until 2016",align="center"),
+                  h3("Explore Olympic Games Data",align="center"),
                   br(),
                   tags$img(src='www/Olympic.png', align= "center",height='60%',width='95%'),
                   br(),
-                  h4("How to Navigate the Olympic Rshiny App",align="center"),
+                  h4("How to Navigate OlympicRshiny",align="center"),
                   br(),
-                  h5("1. Choose your country by the dropdown list"),
+                  h5("1. Choose a country from the dropdown list."),
                   selectInput('NOC',"Choose Your Country:",
-                              choices = sort(unique(Olympic$NOC)),
-                              selected = "Australia",selectize = FALSE,width='400px',size = 10),
+                              choices = sort(unique(stats::na.omit(Olympic$NOC))),
+                              selected = "Australia",selectize = FALSE,width='100%',size = 10),
                   br(),
-                  h5("2. Click on *MEDAL GRAPH* tab to see how the medals were won for each year for the chosen country with respective to Gender."),
+                  h5("2. Use the Medal Graph tab to explore medal-winning performances over time by gender."),
                   br(),
-                  h5("3. Show the data of the chosen country using *TOP Athlete* tab."),
+                  h5("3. Use the Top Athletes tab to explore athletes with multiple medal-winning performances at the same Olympic Games."),
                   br(),
-                  h5("4. Print a Summary Table of the chosen country using the *DESCRIBE* tab."),
+                  h5("4. Use the Gender by Year tab to examine gender representation over time."),
                   br(),
-                  h5("5. Use *G/Years* tab to understand how Gender representation has changed over
-                     the years of participation for the chosen country."),
+                  h5("5. Use the Gender by Sport tab to examine gender representation across sports."),
                   br(),
-                  h5("6. Use *S/Years* to understand how Gender representation has changed over
-                     sports participated by the attendees for the chosen country."),
+                  h5("6. Use the Height & Weight by Sport tab to explore the relationship between athlete height and weight across sports and gender."),
                   br(),
-                  h5("7. Finally, Use the *H/W/Sport* tab to explore how participants
-                     Height and Weight relationship for each Sporting event with respective
-                     to gender for the chosen country."),
+                  helpText("Select different countries to explore patterns in Olympic participation, athlete characteristics, sports and medal-winning performances."),
                   br(),
-                  helpText("*Do the above steps for different countries and observe them for your amusement.*"),
+                  h4("Data Source", align = "center"),
+                  helpText("Olympic data are obtained from the olympicAthletes R package."),
                   br(),
                   h4("Thank You",align="center")
                 ),
-                # tabs for 4 types
+                # Analysis tabs
                 mainPanel(
                   tags$style(type="text/css", ".shiny-output-error { visibility: hidden; }
                                                .shiny-output-error:before {
                                                 visibility: visible;
                                                 text-align: center;
-                                                content: 'The Country you have chosen has not won any medals.'; }
-                                                }"),
+                                                content: 'No data are available for this selection.'; }"),
                   tags$head(tags$style(".shiny-output-error{color: blue;}")),
                   tabsetPanel(type="tabs",
-                              tabPanel("HEIGHT VS WEIGHT",plotOutput("HeightvsWeightplot")),
-                              tabPanel("TOP ATHLETE",plotOutput("TopAthleteplot")),
-                              tabPanel("DESCRIBE",htmlOutput("summary")),
-                              tabPanel("MEDAL GRAPH",plotOutput("Medalplot")),
-                              tabPanel("G/Years",plotOutput("GenderBarplot")),
-                              tabPanel("S/Years",plotOutput("SportsBarplot")),
-                              tabPanel("H/W/Sport",plotOutput("HWSplot")),
-                              tabPanel(title=HTML("</a></li><li><a href='http://www.amalan-mahendran.com/' target='_blank'>About Me"))
+                              tabPanel("Swimming: Height vs Weight",plotOutput("HeightvsWeightplot")),
+                              tabPanel("Top Athletes",plotOutput("TopAthleteplot")),
+                              tabPanel("Medal Graph",plotOutput("Medalplot")),
+                              tabPanel("Gender by Year",plotOutput("GenderBarplot")),
+                              tabPanel("Gender by Sport",plotOutput("SportsBarplot")),
+                              tabPanel("Height & Weight by Sport",plotOutput("HWSplot")),
+                              tabPanel(title=HTML("</a></li><li><a href='https://amalan-mahendran.com/' target='_blank'>About Me"))
                               )
                           ),fluid = FALSE)
     )

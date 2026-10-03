@@ -5,29 +5,36 @@
 \alias{Olympic}
 \title{Olympic data}
 \format{
-A data frame with
+A data frame with the following variables:
 \describe{
-\item{\code{Name}}{Athlete's name}
-\item{\code{Sex}}{Male or Female}
-\item{\code{Age}}{Age of the athlete in integer form}
-\item{\code{Height}}{In centimeters}
-\item{\code{Weight}}{In kilograms}
-\item{\code{Team}}{Team name}
-\item{\code{NOC}}{National Olympic Committee 3-letter code converted into region}
-\item{\code{Games}}{Year and season}
-\item{\code{Year}}{Year the olympic games was held}
-\item{\code{Season}}{Summer or Winter olympic games}
-\item{\code{City}}{Host city}
-\item{\code{Sport}}{Sport}
-\item{\code{Event}}{Event}
-\item{\code{Medal}}{Gold, Silver, Bronze, or No medal}
+\item{\code{ID}}{Unique athlete identifier.}
+\item{\code{Name}}{Athlete's name.}
+\item{\code{Sex}}{Sex of the athlete: Male or Female.}
+\item{\code{Age}}{Age of the athlete in years.}
+\item{\code{Height}}{Height of the athlete in centimeters.}
+\item{\code{Weight}}{Weight of the athlete in kilograms.}
+\item{\code{Team}}{Team name.}
+\item{\code{Games}}{Olympic Games, identified by year and season.}
+\item{\code{Year}}{Year in which the Olympic Games were held.}
+\item{\code{Season}}{Olympic Games season: Summer or Winter.}
+\item{\code{City}}{Host city of the Olympic Games.}
+\item{\code{Sport}}{Sport in which the athlete participated.}
+\item{\code{Event}}{Event in which the athlete participated.}
+\item{\code{Medal}}{Medal won: Gold, Silver, Bronze, or \code{NA} if no medal was won.}
+\item{\code{NOC}}{Region corresponding to the athlete's National Olympic Committee code.}
 }
+}
+\source{
+The Olympic athlete-event data are obtained from the
+\pkg{olympicAthletes} R package.
 }
 \usage{
 Olympic
 }
 \description{
-Data of Olympic games from 1896 to 2016 are stored here, which is available at Kaggle.
+Olympic athlete-event data from 1896 onwards, including both Summer and
+Winter Olympic Games. The data are obtained from the
+\pkg{olympicAthletes} R package and reformatted for use in \pkg{OlympicRshiny}.
 }
 \examples{
 plot(Olympic$Height,Olympic$Weight)

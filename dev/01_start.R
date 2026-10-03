@@ -21,12 +21,16 @@
 golem::fill_desc(
   pkg_name = "OlympicRshiny", # The Name of the package containing the App
   pkg_title = "'Shiny' Application for Olympic Data", # The Title of the package containing the App
-  pkg_description = "'Shiny' Application to visualize Olympic Data. From 1896 to 2016. Even Winter Olympics events are included. Thank You Kaggle for the Data. <https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results>", # The Description of the package containing the App
+  pkg_description = "Provides a 'Shiny' application for exploring and visualizing
+    Olympic Games data from 1896 onwards, including both Summer and Winter
+    Olympic Games. The application provides interactive visualizations of
+    athletes, countries, sports, events, and medal results. Olympic data
+    are obtained from the 'olympicAthletes' R package.", # The Description of the package containing the App
   author_first_name = "Amalan", # Your First Name
   author_last_name = "Mahendran", # Your Last Name
   author_email = "amalan0595@gmail.com", # Your Email
   repo_url = "https://github.com/Amalan-ConStat/OlympicRshiny", # The URL of the GitHub Repo (optional),
-  pkg_version = "1.0.1"
+  pkg_version = "1.1.0"
 )
 
 ## Set {golem} options ----
