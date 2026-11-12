@@ -10,19 +10,16 @@
 checks](https://badges.cranchecks.info/summary/OlympicRshiny.svg)](https://cran.r-project.org/web/checks/check_results_OlympicRshiny.html)
 [![r-universe status
 badge](https://Amalan-ConStat.r-universe.dev/badges/OlympicRshiny)](https://Amalan-ConStat.r-universe.dev/OlympicRshiny)
-
-[![](http://cranlogs.r-pkg.org/badges/grand-total/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
-[![](http://cranlogs.r-pkg.org/badges/last-month/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
-[![](http://cranlogs.r-pkg.org/badges/last-week/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
-
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 
+[![](http://cranlogs.r-pkg.org/badges/grand-total/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
+[![](http://cranlogs.r-pkg.org/badges/last-month/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
+[![](http://cranlogs.r-pkg.org/badges/last-week/OlympicRshiny?color=green)](https://cran.r-project.org/package=OlympicRshiny)
 [![GitHub
 issues](https://img.shields.io/github/issues/Amalan-ConStat/OlympicRshiny.svg?style=popout)](https://github.com/Amalan-ConStat/OlympicRshiny/issues)
-
 [![](https://img.shields.io/github/languages/code-size/Amalan-ConStat/OlympicRshiny.svg)](https://github.com/Amalan-ConStat/OlympicRshiny)
 
 [![MIT
